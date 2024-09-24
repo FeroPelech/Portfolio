@@ -1,12 +1,17 @@
 import React from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import StoreIcon from "@mui/icons-material/Store";
 
 const App = () => {
   return (
     <div className="App">
-      <div className="header__logo"></div>
-
-      <div className="header__search"></div>
+      <div className="header__logo">
+        <StoreIcon className="header__logoImage" fontSize="large" />
+        <h2 className="header__logoTitle">eShop</h2>
+      </div>
+      <div className="header__search">
+        <input type="text" className="header__searchInput" />
+      </div>
 
       <div className="header__nav">
         <div className="nav__item">
@@ -18,7 +23,7 @@ const App = () => {
           <span className="nav__itemLineTwo">Shop</span>
         </div>
         <div className="nav__item">
-          <ShoppingCartIcon />
+          <ShoppingCartIcon fontSize="large" />
           <span className="nav__itemLineTwo">0</span>
         </div>
       </div>
