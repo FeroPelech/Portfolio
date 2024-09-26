@@ -67,3 +67,11 @@
   font-size: 13px;
   font-weight: 800;
 }
+
+.nav__itemBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 50px;
+  margin-left: 10px;
+}
