@@ -50,3 +50,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.nav__item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
