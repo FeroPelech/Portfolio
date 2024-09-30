@@ -1,21 +1,29 @@
 import React from "react";
 import "./Product.css";
 
-export default function Product() {
+export default function Product({ id, title, image, price, rating }) {
   return (
     <div>
       <div className="product">
         <div className="product__info">
-          <p>Title</p>
-          <p className="product__price">30€</p>
-          <div className="product__rating">⭐⭐</div>
-          <img
-            src="https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Bag"
-          />
+          <p>{title}</p>
+          <p className="product__price">
+            <strong>{price}</strong>
+            <small>€</small>
+          </p>
+          <div className="product__rating">
+            {Array(rating)
+              .fill()
+              .map((_, i) => (
+                <p>⭐</p>
+              ))}
+          </div>
+          <img src={image} alt="Bag" />
           <button>Add to Basket</button>
         </div>
       </div>
     </div>
   );
 }
+
+//⭐⭐

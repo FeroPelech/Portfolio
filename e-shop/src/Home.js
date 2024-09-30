@@ -14,7 +14,13 @@ function Home() {
           />
 
           <div className="home__row">
-            <Product />
+            <Product
+              id="2156287"
+              title="The pack fits a full-frame DSLR camera, along with three to five lenses, and up to a 15 laptop. Customizable dividers and a FIELD PACK provide handy"
+              price={11.96}
+              rating={5}
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_G7hyzoSHA_XyjfZX6KILSSAhFhTSjRzOO6JZDuZDvXOwD7amfpx&usqp=CAE&s"
+            />
             <Product />
           </div>
 
