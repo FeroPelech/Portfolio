@@ -3,23 +3,25 @@ import "./CheckoutProduct.css";
 
 function CheckoutProduct() {
   return (
-    <div className="product">
+    <div className="checkoutProduct">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_G7hyzoSHA_XyjfZX6KILSSAhFhTSjRzOO6JZDuZDvXOwD7amfpx&usqp=CAE&s"
+        alt=""
+        className="checkoutProduct__title"
+      />
       <div className="product__info">
-        <p>{title}</p>
-        <p className="product__price">
-          <strong>{price}</strong>
-          <small>€</small>
+        <p className="checkoutProduct__title">
+          The pack fits a full-frame DSLR camera, along with three to five
+          lenses, and up to a 15 laptop. Customizable dividers and a FIELD PACK
+          provide handy
         </p>
-        <div className="product__rating">
-          {Array(rating)
-            .fill()
-            .map((_, i) => (
-              <p>⭐</p>
-            ))}
-        </div>
+        <p className="checkoutProduct__price">
+          <small>$</small>
+          <strong>20</strong>
+        </p>
+        <div className="checkoutProduct__rating">⭐⭐</div>
+        <button>Remove from basket</button>
       </div>
-      <img src={image} alt="Bag" />
-      <button>Add to Basket</button>
     </div>
   );
 }
