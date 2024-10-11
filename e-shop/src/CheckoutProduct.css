@@ -21,3 +21,7 @@
   width: 180px;
   height: 180px;
 }
+
+.checkoutProduct__rating {
+  display: flex;
+}
