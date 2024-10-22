@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Product.css";
-import { useState } from "./StateProvider";
+import { useState, useStateValue } from "./StateProvider";
 
 export default function Product({ id, title, image, price, rating }) {
+  const [state, dispatch] = useStateValue();
+
   return (
     <div className="product">
       <div className="product__info">
