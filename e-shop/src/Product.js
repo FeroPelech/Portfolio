@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.css";
+import {useState}
 
 export default function Product({ id, title, image, price, rating }) {
   return (
@@ -19,7 +20,7 @@ export default function Product({ id, title, image, price, rating }) {
         </div>
       </div>
       <img src={image} alt="Bag" />
-      <button>Add to Basket</button>
+      <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );
 }
