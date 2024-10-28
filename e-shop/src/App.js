@@ -1,10 +1,10 @@
-import React from "react";
-import Header from "./Header";
+import "./App.css";
 import Home from "./Home";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./Header";
 import Checkout from "./Checkout";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <Router>
@@ -13,6 +13,7 @@ const App = () => {
             <Header />
             <Checkout />
           </Route>
+
           <Route path="/">
             <Header />
             <Home />
@@ -21,6 +22,6 @@ const App = () => {
       </Router>
     </div>
   );
-};
+}
 
 export default App;
