@@ -5,6 +5,7 @@ import MovieList from "./components/MovieList";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
   return (
     <div className="container-fluid movie-app">
       <div className="row">
