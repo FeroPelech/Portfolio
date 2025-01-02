@@ -7,3 +7,8 @@ body {
   overflow-x: auto;
   flex-wrap: nowrap;
 }
+
+.image-container {
+  position: relative;
+  transition: transform;
+}
