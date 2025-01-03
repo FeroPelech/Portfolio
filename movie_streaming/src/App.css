@@ -12,3 +12,8 @@ body {
   position: relative;
   transition: transform;
 }
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
