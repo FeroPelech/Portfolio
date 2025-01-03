@@ -11,6 +11,7 @@ const App = () => {
 
   const getMovieRequest = async (searchValue) => {
     const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=79555010`;
+    const response = await fetch(url);
   };
   return (
     <div className="container-fluid movie-app">
