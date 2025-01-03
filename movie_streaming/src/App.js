@@ -13,7 +13,11 @@ const App = () => {
     const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=636cb2a3`;
     const response = await fetch(url);
     const responseJson = await response.json();
+    if (responseJson.Search) {
+      setMovies(responseJson.Search);
+    }
   };
+
   return (
     <div className="container-fluid movie-app">
       <div className="row d-flex align-items-center mt-4 mb-4">
