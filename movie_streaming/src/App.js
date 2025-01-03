@@ -8,10 +8,12 @@ import SearchBox from "./components/SearchBox";
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchValue, setSearchValue] = useState("");
+
+  const getMovieRequest = async () => {};
   return (
     <div className="container-fluid movie-app">
       <div className="row d-flex align-items-center mt-4 mb-4">
-        <MovieListHeading heading="movies" />
+        <MovieListHeading heading="Favourites" />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div className="row">
