@@ -1,4 +1,5 @@
 const MovieList = (props) => {
+  const FavouriteComponent = props.favouriteComponent;
   return (
     <>
       {props.movies.map((movie, index) => (
@@ -7,7 +8,9 @@ const MovieList = (props) => {
           <div
             onClick={() => props.handleFavouritesClick(movie)}
             className="overlay d-flex align-items-center justify-content-center"
-          ></div>
+          >
+            <FavouriteComponent />
+          </div>
         </div>
       ))}
     </>
