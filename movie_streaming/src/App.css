@@ -10,7 +10,7 @@ body {
 
 .image-container {
   position: relative;
-  transition: transform;
+  transition: transform 0.2s;
 }
 
 .image-container:hover {
