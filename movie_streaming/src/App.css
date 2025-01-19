@@ -9,6 +9,7 @@ body {
 }
 
 .image-container {
+  width: 300px;
   position: relative;
   transition: transform 0.2s;
 }
