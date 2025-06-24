@@ -5,7 +5,9 @@ import React from "react";
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const handleChange = (event) => setSearchTerm(event.target.value);
-  const onKeyPress = (event) => {};
+  const onKeyPress = (event) => {
+    onsubmit(searchTerm);
+  };
 
   return (
     <Paper element={6} styling={{ padding: "25px" }}>
@@ -14,7 +16,7 @@ const SearchBar = () => {
         label="Search..."
         value={searchTerm}
         onChange={handleChange}
-        onKeyPress={onkeyPress}
+        onKeyDown={onKeyPress}
       />
     </Paper>
   );
