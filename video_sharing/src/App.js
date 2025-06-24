@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 const App = () => {
   return (
     <Grid style={{ justifyContent: "center" }} container spacing={10}>
-      <Grid item xs={12}>
+      <Grid item xs={11}>
         <Grid container spacing={10}>
           <Grid item xs={12}>
             {/*{SearchBar} */}
