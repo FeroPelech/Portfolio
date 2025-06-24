@@ -1,6 +1,7 @@
 import "./App.css";
 import youtube from "./api/youtube";
 import { Grid } from "@mui/material";
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   return (
