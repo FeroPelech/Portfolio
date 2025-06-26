@@ -21,7 +21,16 @@ const App = () => {
       </Grid>
     </Grid>
   );
-  async function handleSubmit(searchItem) {}
+  async function handleSubmit(searchTerm) {
+    const response = await youtube.get("search", {
+      params: {
+        part: "snippet",
+        maxResults: 5,
+        key: "AIzaSyAlQg7NeWOj9OKWDXrFdC2Fg_w4L7RQ0Jg",
+        q: searchTerm,
+      },
+    });
+  }
 };
 
 export default App;
