@@ -1,6 +1,8 @@
 import React from "react";
 
 const CreateArea = () => {
+  function handleChange(e) {}
+
   return (
     <div>
       <form className="create-note">
