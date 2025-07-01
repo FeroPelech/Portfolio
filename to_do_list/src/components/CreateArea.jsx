@@ -1,4 +1,3 @@
-import { SendTwoTone } from "@mui/icons-material";
 import React, { useState } from "react";
 
 const CreateArea = () => {
