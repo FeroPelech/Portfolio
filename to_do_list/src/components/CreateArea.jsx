@@ -21,10 +21,18 @@ const CreateArea = () => {
   return (
     <div>
       <form className="create-note">
-        <input type="text" name="title" placeholder="Title" />
+        <input
+          type="text"
+          name="title"
+          onChange={handleChange}
+          value={note.title}
+          placeholder="Title"
+        />
         <textarea
           name="content"
           rows="3"
+          onChange={handleChange}
+          value={note.content}
           placeholder="Take a note..."
         ></textarea>
       </form>
