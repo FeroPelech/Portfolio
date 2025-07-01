@@ -1,7 +1,18 @@
 import React from "react";
 
 const CreateArea = () => {
-  return <div>CreateArea</div>;
+  return (
+    <div>
+      <form className="create-note">
+        <input type="text" name="title" placeholder="Title" />
+        <textarea
+          name="content"
+          rows="3"
+          placeholder="Take a note..."
+        ></textarea>
+      </form>
+    </div>
+  );
 };
 
 export default CreateArea;
