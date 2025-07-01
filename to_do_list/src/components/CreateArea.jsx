@@ -1,7 +1,9 @@
 import React from "react";
 
 const CreateArea = () => {
-  function handleChange(e) {}
+  function handleChange(e) {
+    const { name, value } = e.target;
+  }
 
   return (
     <div>
