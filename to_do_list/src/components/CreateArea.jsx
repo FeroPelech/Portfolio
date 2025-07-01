@@ -1,6 +1,12 @@
-import React from "react";
+import { SendTwoTone } from "@mui/icons-material";
+import React, { useState } from "react";
 
 const CreateArea = () => {
+  const [note, setNote] = useState({
+    title: "",
+    content: "",
+  });
+
   function handleChange(e) {
     const { name, value } = e.target;
   }
