@@ -5,6 +5,8 @@ import CreateArea from "./components/CreateArea";
 const App = () => {
   const [notes, setNotes] = useState([]);
 
+  function addNote(newNote) {}
+
   return (
     <div className="App">
       <Header />
