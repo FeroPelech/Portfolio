@@ -1,7 +1,8 @@
 import Fab from "@mui/material/Fab";
 import React, { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
 
-const CreateArea = () => {
+const CreateArea = (props) => {
   const [note, setNote] = useState({
     title: "",
     content: "",
@@ -16,6 +17,10 @@ const CreateArea = () => {
         [name]: value,
       };
     });
+  }
+
+  function submitNote(e) {
+    props.onAdd(note);
   }
 
   return (
@@ -35,7 +40,9 @@ const CreateArea = () => {
           value={note.content}
           placeholder="Take a note..."
         ></textarea>
-        <Fab onClick={submitNote}></Fab>
+        <Fab onClick={submitNote}>
+          <AddIcon />
+        </Fab>
       </form>
     </div>
   );
