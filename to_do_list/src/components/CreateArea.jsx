@@ -1,3 +1,4 @@
+import Fab from "@mui/material/Fab";
 import React, { useState } from "react";
 
 const CreateArea = () => {
@@ -34,6 +35,7 @@ const CreateArea = () => {
           value={note.content}
           placeholder="Take a note..."
         ></textarea>
+        <Fab onClick={submitNote}></Fab>
       </form>
     </div>
   );
