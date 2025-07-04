@@ -16,7 +16,16 @@ const App = () => {
     <div className="App">
       <Header />
       <CreateArea onAdd={addNote} />
-      <Note />
+      {notes.map((noteItem, index) => {
+        return (
+          <Note
+            key={index}
+            id={index}
+            title={noteItem.title}
+            content={noteItem.content}
+          />
+        );
+      })}
     </div>
   );
 };
