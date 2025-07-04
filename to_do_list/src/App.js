@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import CreateArea from "./components/CreateArea";
+import Note from "./components/Note";
 
 const App = () => {
   const [notes, setNotes] = useState([]);
@@ -15,6 +16,7 @@ const App = () => {
     <div className="App">
       <Header />
       <CreateArea onAdd={addNote} />
+      <Note />
     </div>
   );
 };
