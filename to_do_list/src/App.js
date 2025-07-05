@@ -12,6 +12,8 @@ const App = () => {
     });
   }
 
+  function deleteNote() {}
+
   return (
     <div className="App">
       <Header />
@@ -23,6 +25,7 @@ const App = () => {
             id={index}
             title={noteItem.title}
             content={noteItem.content}
+            onDelete={deleteNote}
           />
         );
       })}
