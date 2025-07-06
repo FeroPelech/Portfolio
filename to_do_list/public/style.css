@@ -83,5 +83,10 @@ footer p {
   font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
 }
