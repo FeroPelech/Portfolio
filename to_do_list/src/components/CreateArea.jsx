@@ -30,20 +30,23 @@ const CreateArea = (props) => {
     e.preventDefault();
   }
 
+  function expand() {}
+
   return (
     <div>
       <form className="create-note">
-        <input
-          type="text"
-          name="title"
-          onChange={handleChange}
-          value={note.title}
-          placeholder="Title"
-        />
-
+        {isExpanded && (
+          <input
+            type="text"
+            name="title"
+            onChange={handleChange}
+            value={note.title}
+            placeholder="Title"
+          />
+        )}
         <textarea
           name="content"
-          rows="3"
+          rows={isExpanded ? 3 : 1}
           onChange={handleChange}
           value={note.content}
           placeholder="Take a note..."
