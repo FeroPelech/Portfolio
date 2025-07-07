@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 
 const CreateArea = (props) => {
+  const [isExpanded, setExpanded] = useState(false);
+
   const [note, setNote] = useState({
     title: "",
     content: "",
@@ -38,6 +40,7 @@ const CreateArea = (props) => {
           value={note.title}
           placeholder="Title"
         />
+
         <textarea
           name="content"
           rows="3"
