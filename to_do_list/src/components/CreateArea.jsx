@@ -30,7 +30,9 @@ const CreateArea = (props) => {
     e.preventDefault();
   }
 
-  function expand() {}
+  function expand() {
+    setExpanded(true);
+  }
 
   return (
     <div>
@@ -47,6 +49,7 @@ const CreateArea = (props) => {
         <textarea
           name="content"
           rows={isExpanded ? 3 : 1}
+          onClick={expand}
           onChange={handleChange}
           value={note.content}
           placeholder="Take a note..."
