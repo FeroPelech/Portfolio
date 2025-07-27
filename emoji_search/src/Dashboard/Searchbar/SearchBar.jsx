@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-
+import "./SearchBar.css";
 export class SearchBar extends PureComponent {
   render() {
     return (
