@@ -9,6 +9,7 @@ class App extends PureComponent {
     return (
       <div>
         <Header />
+        <SearchBar />
       </div>
     );
   }
