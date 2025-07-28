@@ -6,6 +6,9 @@ import Filter from "./Dashboard/Emojis/Filter";
 import { PureComponent } from "react";
 
 class App extends PureComponent {
+  state = {
+    filteredEmojis: Filter("", 20),
+  };
   render() {
     return (
       <div>
