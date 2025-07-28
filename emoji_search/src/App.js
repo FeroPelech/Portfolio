@@ -14,6 +14,7 @@ class App extends PureComponent {
       <div>
         <Header />
         <SearchBar />
+        <EmojiResults emojiData={this.state.filteredEmojis} />
       </div>
     );
   }
