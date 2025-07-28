@@ -1,9 +1,9 @@
 import React from "react";
+import { PureComponent } from "react";
 import Header from "./Dashboard/Header/Header.jsx";
 import SearchBar from "./Dashboard/Searchbar/SearchBar.jsx";
 // import EmojiResults from "./Dashboard/Emojis/EmojiResults.jsx";
-import Filter from "./Dashboard/Emojis/Filter";
-import { PureComponent } from "react";
+import Filter from "./Dashboard/Emojis/Filter.js";
 
 class App extends PureComponent {
   state = {
