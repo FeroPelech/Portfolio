@@ -5,5 +5,10 @@ export default class EmojiResultRow extends PureComponent {
     const { title, symbol } = this.props;
     const codePointHex = symbol.codePointAt(0).toString(16);
     const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
+    return (
+      <div>
+        <img src={src} alt={title} />
+      </div>
+    );
   }
 }
