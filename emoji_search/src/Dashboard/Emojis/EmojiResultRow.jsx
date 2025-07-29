@@ -8,6 +8,7 @@ export default class EmojiResultRow extends PureComponent {
     return (
       <div>
         <img src={src} alt={title} />
+        <span className="title">{title}</span>
       </div>
     );
   }
