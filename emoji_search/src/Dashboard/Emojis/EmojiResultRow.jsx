@@ -1,3 +1,7 @@
 import { PureComponent } from "react";
 
-export default class EmojiResultRow extends PureComponent {}
+export default class EmojiResultRow extends PureComponent {
+  render() {
+    const { title, symbol } = this.props;
+  }
+}
