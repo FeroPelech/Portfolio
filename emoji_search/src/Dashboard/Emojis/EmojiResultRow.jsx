@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import "EmojiResultRow.css";
+import "./EmojiResultRow.css";
 
 export default class EmojiResultRow extends PureComponent {
   render() {
