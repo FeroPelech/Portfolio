@@ -16,3 +16,8 @@
   height: 32px;
   padding-right: 10px;
 }
+
+.component-emoji-result-row title {
+  position: relative;
+  top: 8px;
+}
