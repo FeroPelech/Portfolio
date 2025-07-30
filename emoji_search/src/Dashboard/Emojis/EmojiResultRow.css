@@ -10,3 +10,9 @@
 .component-emoji-result-row :hover {
   background-color: #eee;
 }
+
+.component-emoji-result-row img {
+  width: 32px;
+  height: 32px;
+  padding-right: 10px;
+}
