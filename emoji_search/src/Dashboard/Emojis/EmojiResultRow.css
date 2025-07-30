@@ -6,3 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
+
+.component-emoji-result-row :hover {
+  background-color: #eee;
+}
