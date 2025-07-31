@@ -1,5 +1,6 @@
 import { PureComponent } from "react";
 import "./SearchBar.css";
+import Filter from "./Dashbord/Emoji/Filter";
 export class SearchBar extends PureComponent {
   render() {
     return (
