@@ -2,6 +2,10 @@ import { PureComponent } from "react";
 import "./SearchBar.css";
 import Filter from "./Dashbord/Emoji/Filter";
 export class SearchBar extends PureComponent {
+  state = {
+    filteredEmojis: Filter("", 20),
+  };
+
   render() {
     return (
       <div className="search-input">
