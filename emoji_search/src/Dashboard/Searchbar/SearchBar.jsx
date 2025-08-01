@@ -1,6 +1,6 @@
 import { PureComponent } from "react";
 import "./SearchBar.css";
-export class SearchBar extends PureComponent {
+export default class SearchBar extends PureComponent {
   handleText = (e) => {
     this.props.handleChange(e);
   };
@@ -18,5 +18,3 @@ export class SearchBar extends PureComponent {
     );
   }
 }
-
-export default SearchBar;
