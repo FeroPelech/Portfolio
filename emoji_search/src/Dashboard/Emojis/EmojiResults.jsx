@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import EmojiResultRow from "./EmojiResultRow";
+import EmojiResultsRow from "./EmojiResultRow";
 import Clipboard from "clipboard";
 
 export default class EmojiResults extends PureComponent {
@@ -14,7 +14,7 @@ export default class EmojiResults extends PureComponent {
     return (
       <div className="component-emoji-results">
         {emojiData.map((emoji) => {
-          <EmojiResultRow
+          <EmojiResultsRow
             key={emoji.title}
             symbol={emoji.symbol}
             title={emoji.title}
