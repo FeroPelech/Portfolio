@@ -8,7 +8,11 @@ export class SearchBar extends PureComponent {
     return (
       <div className="search-input">
         <div>
-          <input className="input-text" placeholder="Search Emoji" />
+          <input
+            className="input-text"
+            placeholder="Search Emoji"
+            onChange={this.handleText}
+          />
         </div>
       </div>
     );
