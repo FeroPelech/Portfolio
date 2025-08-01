@@ -1,5 +1,6 @@
 import { PureComponent } from "react";
 import EmojiResultRow from "./EmojiResultRow";
+import Clipboard from "clipboard";
 
 export default class EmojiResults extends PureComponent {
   render() {
