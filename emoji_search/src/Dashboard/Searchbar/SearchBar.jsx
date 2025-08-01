@@ -1,6 +1,9 @@
 import { PureComponent } from "react";
 import "./SearchBar.css";
 export class SearchBar extends PureComponent {
+  handleText = (e) => {
+    this.props.handleChange(e);
+  };
   render() {
     return (
       <div className="search-input">
