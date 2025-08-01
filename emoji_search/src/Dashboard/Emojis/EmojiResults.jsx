@@ -3,6 +3,9 @@ import EmojiResultRow from "./EmojiResultRow";
 import Clipboard from "clipboard";
 
 export default class EmojiResults extends PureComponent {
+  componentDidMount() {
+    this.clipboard = new Clipboard(".copy-it");
+  }
   render() {
     const { emojiData } = this.props;
     return (
