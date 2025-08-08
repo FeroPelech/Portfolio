@@ -3,7 +3,9 @@ import React from "react";
 const SearchBar = () => {
   return (
     <div>
-      <section></section>
+      <section>
+        <form></form>
+      </section>
     </div>
   );
 };
