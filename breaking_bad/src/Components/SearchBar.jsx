@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ setQuery }) => {
+  const [text, setText] = useState("");
+
   return (
     <div>
       <section>
