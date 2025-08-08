@@ -6,6 +6,7 @@ import CharacterList from "./Components/CharacterList";
 const App = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [query, setQuery] = useState("");
   return (
     <div className="App">
       <Header />
