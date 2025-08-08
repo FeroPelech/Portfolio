@@ -4,7 +4,18 @@ const SearchBar = () => {
   return (
     <div>
       <section>
-        <form></form>
+        <form>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search Characters"
+            autoFocus
+            name="search"
+            value=""
+            onChange=""
+            id="search"
+          />
+        </form>
       </section>
     </div>
   );
