@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <SearchBar />
+      <SearchBar setQuery={(query) => setQuery(query)} />
       <CharacterList />
     </div>
   );
