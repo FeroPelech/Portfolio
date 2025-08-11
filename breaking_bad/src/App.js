@@ -8,6 +8,11 @@ const App = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
+
+  useEffect(() => {
+    const result = axios.get(`/characters?name=${query}`);
+  });
+
   return (
     <div className="App">
       <Header />
