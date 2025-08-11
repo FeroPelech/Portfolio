@@ -11,7 +11,9 @@ const App = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const result = axios.get(`/characters?name=${query}`);
+      const results = axios.get(`/characters?name=${query}`);
+      setItems(results.data);
+      setLoading(false);
     };
   });
 
