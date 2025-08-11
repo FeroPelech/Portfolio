@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./Components/NavBar";
 import SearchBar from "./Components/SearchBar";
 import CharacterList from "./Components/CharacterList";
+import axios from "axios";
 
 const App = () => {
   const [items, setItems] = useState([]);
