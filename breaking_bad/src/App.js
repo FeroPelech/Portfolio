@@ -15,7 +15,8 @@ const App = () => {
       setItems(results.data);
       setLoading(false);
     };
-  });
+    fetchItems();
+  }, [query]);
 
   return (
     <div className="App">
