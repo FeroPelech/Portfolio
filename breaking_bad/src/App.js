@@ -10,7 +10,9 @@ const App = () => {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    const result = axios.get(`/characters?name=${query}`);
+    const fetchItems = async () => {
+      const result = axios.get(`/characters?name=${query}`);
+    };
   });
 
   return (
