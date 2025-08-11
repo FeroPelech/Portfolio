@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Header from "./Components/NavBar";
 import SearchBar from "./Components/SearchBar";
 import CharacterList from "./Components/CharacterList";
