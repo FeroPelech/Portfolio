@@ -5,7 +5,7 @@ import CharacterList from "./Components/CharacterList";
 import axios from "axios";
 
 const App = () => {
-  const [items, setItems] = useState([]);
+  const [item, setItem] = useState([]);
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
 
@@ -22,7 +22,7 @@ const App = () => {
     <div className="App">
       <Header />
       <SearchBar setQuery={(query) => setQuery(query)} />
-      <CharacterList items={items} />
+      <CharacterList item={item} key={item.char_id} />
     </div>
   );
 };
