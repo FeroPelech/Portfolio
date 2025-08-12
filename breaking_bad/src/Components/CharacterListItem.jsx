@@ -6,7 +6,9 @@ const CharacterListItem = ({ item }) => {
       <div className="card-front">
         <img src={item.img} alt="character" />
       </div>
-      <div className="card-back"></div>
+      <div className="card-back">
+        <h1>{item.name}</h1>
+      </div>
     </div>
   );
 };
