@@ -22,7 +22,7 @@ const App = () => {
     <div className="App">
       <Header />
       <SearchBar setQuery={(query) => setQuery(query)} />
-      <CharacterList />
+      <CharacterList items={items} />
     </div>
   );
 };
