@@ -1,7 +1,7 @@
 import React from "react";
 
 const CharacterListItem = () => {
-  return <div>CharacterListItem</div>;
+  return <div className="card">CharacterListItem</div>;
 };
 
 export default CharacterListItem;
