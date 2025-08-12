@@ -1,7 +1,9 @@
 import React from "react";
 
-const CharacterList = () => {
-  return <div>CharacterList</div>;
+const CharacterList = ({items}) => {
+  return (
+
+  );
 };
 
 export default CharacterList;
