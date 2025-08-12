@@ -8,6 +8,9 @@ const CharacterListItem = ({ item }) => {
       </div>
       <div className="card-back">
         <h1>{item.name}</h1>
+        <ul>
+          <li></li>
+        </ul>
       </div>
     </div>
   );
