@@ -9,7 +9,10 @@ const CharacterListItem = ({ item }) => {
       <div className="card-back">
         <h1>{item.name}</h1>
         <ul>
-          <li></li>
+          <li>
+            <strong>Actor Name: </strong>
+            {item.portrayed}
+          </li>
         </ul>
       </div>
     </div>
