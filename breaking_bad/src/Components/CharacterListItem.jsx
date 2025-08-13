@@ -17,6 +17,10 @@ const CharacterListItem = ({ item }) => {
             <strong>Nickk Name: </strong>
             {item.nickname}
           </li>
+          <li>
+            <strong>Birthday: </strong>
+            {item.birthday}
+          </li>
         </ul>
       </div>
     </div>
