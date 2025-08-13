@@ -21,6 +21,12 @@ const CharacterListItem = ({ item }) => {
             <strong>Birthday: </strong>
             {item.birthday}
           </li>
+          <li>
+            <strong>Status: </strong>
+            <span
+              style={{ color: item.status === "Alive" ? "green" : "red" }}
+            ></span>
+          </li>
         </ul>
       </div>
     </div>
