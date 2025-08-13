@@ -6,7 +6,7 @@ import axios from "axios";
 
 const App = () => {
   const [item, setItem] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
 
   useEffect(() => {
