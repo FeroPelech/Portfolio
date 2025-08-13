@@ -13,6 +13,10 @@ const CharacterListItem = ({ item }) => {
             <strong>Actor Name: </strong>
             {item.portrayed}
           </li>
+          <li>
+            <strong>Nickk Name: </strong>
+            {item.nickname}
+          </li>
         </ul>
       </div>
     </div>
