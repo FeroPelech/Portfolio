@@ -12,6 +12,11 @@ const useCharacters = (query) => {
     }
     const fetchCharacters = async () => {
       setLoading(true);
+      try {
+        const res = await axios.get(
+          `https://www.breakingbadapi.com/api/characters?name=${query}`
+        );
+      } catch (error) {}
     };
   });
   return <div>useCharacters</div>;
