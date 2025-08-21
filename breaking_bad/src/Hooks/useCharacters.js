@@ -22,7 +22,8 @@ const useCharacters = (query) => {
         setLoading(false);
       }
     };
-  });
+    fetchCharacters();
+  }, [query]);
   return <div>useCharacters</div>;
 };
 
