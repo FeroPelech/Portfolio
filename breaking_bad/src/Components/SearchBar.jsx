@@ -7,6 +7,7 @@ const SearchBar = ({ query, setQuery }) => {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search characters..."
       />
     </div>
   );
