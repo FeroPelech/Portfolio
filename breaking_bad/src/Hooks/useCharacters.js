@@ -10,7 +10,9 @@ const useCharacters = (query) => {
       setCharacters([]);
       return;
     }
-    const fetchCharacters = async () => {};
+    const fetchCharacters = async () => {
+      setLoading(true);
+    };
   });
   return <div>useCharacters</div>;
 };
