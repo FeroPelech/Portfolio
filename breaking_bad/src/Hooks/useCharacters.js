@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
 const useCharacters = () => {
   return <div>useCharacters</div>;
