@@ -24,7 +24,7 @@ const useCharacters = (query) => {
     };
     fetchCharacters();
   }, [query]);
-  return <div>useCharacters</div>;
+  return { characters, loading };
 };
 
 export default useCharacters;
