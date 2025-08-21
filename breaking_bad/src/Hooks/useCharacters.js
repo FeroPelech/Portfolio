@@ -5,7 +5,12 @@ const useCharacters = (query) => {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {});
+  useEffect(() => {
+    if (!query) {
+      setCharacters([]);
+      return;
+    }
+  });
   return <div>useCharacters</div>;
 };
 
