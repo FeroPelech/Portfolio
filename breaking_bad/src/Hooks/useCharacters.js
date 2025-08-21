@@ -18,6 +18,8 @@ const useCharacters = (query) => {
         );
       } catch (error) {
         console.error("Error fetching characters: ", error);
+      } finally {
+        setLoading(false);
       }
     };
   });
