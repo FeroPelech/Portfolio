@@ -1,6 +1,6 @@
 import React from "react";
 
-const CharacterCard = () => {
+const CharacterCard = ({ character }) => {
   return (
     <div className="card">
       <img src={character.img} alt={character.name} />
