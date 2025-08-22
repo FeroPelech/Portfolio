@@ -13,6 +13,10 @@ const CharacterCard = ({ character }) => {
         <strong>Actor: </strong>
         {character.portrayed}
       </p>
+      <p>
+        <strong>Status: </strong>
+        {character.status}
+      </p>
     </div>
   );
 };
