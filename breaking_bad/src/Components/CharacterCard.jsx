@@ -9,6 +9,10 @@ const CharacterCard = ({ character }) => {
         <strong>Nickname: </strong>
         {character.nickname}
       </p>
+      <p>
+        <strong>Actor: </strong>
+        {character.portrayed}
+      </p>
     </div>
   );
 };
