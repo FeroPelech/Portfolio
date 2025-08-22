@@ -4,6 +4,7 @@ const CharacterCard = ({ character }) => {
   return (
     <div className="card">
       <img src={character.img} alt={character.name} />
+      <h3>{character.name}</h3>
     </div>
   );
 };
