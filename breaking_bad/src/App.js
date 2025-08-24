@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Breaking Bad Characters</h1>
+      <SearchBar query={query} setQuery={setQuery} />
     </div>
   );
 };
