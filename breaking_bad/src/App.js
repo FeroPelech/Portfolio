@@ -6,7 +6,7 @@ import useCharacters from "./Hooks/useCharacters";
 const App = () => {
   const [query, setQuery] = useState("");
   const { characters, loading } = useCharacters(query);
-  return <div>App</div>;
+  return <div className="App">App</div>;
 };
 
 export default App;
