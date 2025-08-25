@@ -1,7 +1,8 @@
 import { useState } from "react";
 import useCharacters from "../Hooks/useCharacters";
 
-const SearchBar = ({ query, setQuery }) => {
+const SearchBar = () => {
+  const [query, setQuery] = useState("");
   return (
     <div>
       <input
