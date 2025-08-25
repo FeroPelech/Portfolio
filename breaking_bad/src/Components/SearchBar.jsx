@@ -13,7 +13,14 @@ const SearchBar = () => {
         placeholder="Search characters..."
       />
       {loading && <p>Loading...</p>}
-      <ul></ul>
+      <ul>
+        {characters.map((char) => (
+          <li key={char.char_id}>
+            <img src={char.img} alt={char.name} width="100" />
+            <p>{char.name}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
