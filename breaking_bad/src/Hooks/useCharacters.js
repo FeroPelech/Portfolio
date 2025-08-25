@@ -7,7 +7,6 @@ const useCharacters = (query) => {
 
   useEffect(() => {
     if (!query) {
-      setCharacters([]);
       return;
     }
     const fetchCharacters = async () => {
@@ -16,6 +15,7 @@ const useCharacters = (query) => {
         const res = await axios.get(
           `https://www.breakingbadapi.com/api/characters?name=${query}`
         );
+        setCharacters(res.data);
       } catch (error) {
         console.error("Error fetching characters: ", error);
       } finally {
