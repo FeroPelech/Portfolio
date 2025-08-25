@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useCharacters from "../Hooks/useCharacters";
 
 const SearchBar = ({ query, setQuery }) => {
   return (
