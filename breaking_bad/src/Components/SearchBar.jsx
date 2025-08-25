@@ -3,6 +3,7 @@ import useCharacters from "../Hooks/useCharacters";
 
 const SearchBar = () => {
   const [query, setQuery] = useState("");
+  const { characters, loading } = useCharacters(query);
   return (
     <div>
       <input
