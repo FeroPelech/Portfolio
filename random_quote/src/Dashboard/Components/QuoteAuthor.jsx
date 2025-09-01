@@ -1,11 +1,11 @@
 import React from "react";
 
-function QuoteAuthor() {
+function QuotesAuthor() {
   return (
     <div>
-      <p>QuoteAuthor</p>
+      <p>QuotesAuthor</p>
     </div>
   );
 }
 
-export default QuoteAuthor;
+export default QuotesAuthor;
