@@ -28,6 +28,116 @@ const players = [
     name: 'Ben White',
     link: white,
   },
+  {
+    id: 2,
+    name: 'Bukayo Saka',
+    link: saka,
+  },
+  {
+    id: 3,
+    name: 'Christian Norgaard',
+    link: norgaard,
+  },
+  {
+    id: 4,
+    name: 'Cristhian Mosquera',
+    link: mosquera,
+  },
+  {
+    id: 5,
+    name: 'David Raya',
+    link: raya,
+  },
+  {
+    id: 6,
+    name: 'Declan Rice',
+    link: rice,
+  },
+  {
+    id: 7,
+    name: 'Eberechi Eze',
+    link: eze,
+  },
+  {
+    id: 8,
+    name: 'Gabriel Magalhaes',
+    link: gabriel,
+  },
+  {
+    id: 9,
+    name: 'Gabriel Martinelli',
+    link: martinelli,
+  },
+  {
+    id: 10,
+    name: 'Jurrien Timber',
+    link: jurrien,
+  },
+  {
+    id: 11,
+    name: 'Kai Havertz',
+    link: kai,
+  },
+  {
+    id: 12,
+    name: 'Leandro Trosard',
+    link: leandro,
+  },
+  {
+    id: 13,
+    name: 'Miles Lewis-Skelly',
+    link: miles,
+  },
+  {
+    id: 14,
+    name: 'Martin Odegaard',
+    link: martinO,
+  },
+  {
+    id: 15,
+    name: 'Martin Zubimendi',
+    link: martinZ,
+  },
+  {
+    id: 16,
+    name: 'Max Dowman',
+    link: max,
+  },
+  {
+    id: 17,
+    name: 'Mikel Arteta',
+    link: couch,
+  },
+  {
+    id: 18,
+    name: 'Mikel Merino',
+    link: mikel,
+  },
+  {
+    id: 19,
+    name: 'Noni Madueke',
+    link: noni,
+  },
+  {
+    id: 20,
+    name: 'Piero Hincapie',
+    link: piero,
+  },
+  {
+    id: 21,
+    name: 'Riccardo Calafiori',
+    link: riccardo,
+  },
+  {
+    id: 22,
+    name: 'Viktor Gyokeres',
+    link: viktor,
+  },
+  {
+    id: 23,
+    name: 'William Saliba',
+    link: william,
+  },
 ]
 
 export default players
